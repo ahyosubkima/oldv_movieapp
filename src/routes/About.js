@@ -1,10 +1,15 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import "./About.css";
 
 function About() {
   const usl = useLocation();
   console.log(usl);
-  return <span>About this page</span>;
+  return (
+    <div className="about__container">
+      <span>About this page</span>
+    </div>
+  );
 }
 
 export default About;

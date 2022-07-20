@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import About from "./routes/About";
 import Navigation from "./components/Navigation";
 import Detail from "./routes/Detail";
+import "./App.css";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" exact={true} element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/movie-detail" element={<Detail />}></Route>
+        <Route path="/movie/:id" element={<Detail />}></Route>
       </Routes>
     </BrowserRouter>
   );
